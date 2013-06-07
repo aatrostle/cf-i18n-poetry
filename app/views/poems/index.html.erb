@@ -18,7 +18,7 @@
     <td><%= poem.title %></td>
     <td><%= poem.author %></td>
     <td><%= poem.body %></td>
-    <td><%= poem.created_at %></td>
+    <td><%= poem.created_at.to_s(:created_time) %></td>
     <td></td>
     <td><%= link_to 'Edit', edit_poem_path(poem) %></td>
     <td><%= link_to 'Destroy', poem, method: :delete, data: { confirm: 'Are you sure?' } %></td>
