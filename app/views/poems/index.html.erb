@@ -1,10 +1,13 @@
-<h1>Listing poems</h1>
+<h1><%= t ".title" %></h1>
+
+<em><%= t ".description" %></em>
 
 <table>
   <tr>
-    <th>Title</th>
-    <th>Author</th>
-    <th>Body</th>
+    <th><%= Poem.human_attribute_name(:title) %></th>
+    <th><%= Poem.human_attribute_name(:author) %></th>
+    <th><%= Poem.human_attribute_name(:body) %></th>
+    <th><%= Poem.human_attribute_name(:posted_on) %></th>
     <th></th>
     <th></th>
     <th></th>
@@ -15,7 +18,8 @@
     <td><%= poem.title %></td>
     <td><%= poem.author %></td>
     <td><%= poem.body %></td>
-    <td><%= link_to 'Show', poem %></td>
+    <td><%= poem.created_at %></td>
+    <td></td>
     <td><%= link_to 'Edit', edit_poem_path(poem) %></td>
     <td><%= link_to 'Destroy', poem, method: :delete, data: { confirm: 'Are you sure?' } %></td>
   </tr>

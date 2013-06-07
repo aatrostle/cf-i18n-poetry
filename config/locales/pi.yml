@@ -1,0 +1,12 @@
+pi:
+  poems:
+    index:
+      title: "Arr, Listin' Poems"
+      description: "Ahoy thar, hearty thanks fer visitin' our site, browse our collection 'o poems below."
+  activerecord:
+    attributes:
+      poem:
+        title: "Th' title"
+        author: "Matey"
+        body: "Treasure"
+        posted_on: "The hour posted"

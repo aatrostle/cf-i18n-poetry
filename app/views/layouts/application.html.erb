@@ -8,7 +8,9 @@
 </head>
 <body>
   <nav id="language-select">
-    TODO: add language selection here
+    Language:
+    <%= link_to_unless_current "English", locale: "en" %> |
+    <%= link_to_unless_current "Pirate", locale: "pi" %>
   </nav>
 
 <%= yield %>
