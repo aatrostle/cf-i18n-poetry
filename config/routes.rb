@@ -1,7 +1,7 @@
 I18nPoetry::Application.routes.draw do
   resources :poems
 
-
+  root :to => "poems#index"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
